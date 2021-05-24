@@ -1,30 +1,24 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import Calculator from '../logic/calculate';
 
 function App() {
-  const [value, setValue] = useState({ total: '0' });
+  const [value, setValue] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
   const handleClick = (name) => {
-    let newValue;
-    if (value.total === '0') {
-      newValue = '';
-    } else {
-      newValue = value.total;
-    }
-
-    if (name === 'AC') {
-      setValue(value.total = { total: '0' });
-    } else {
-      newValue += name;
-      setValue(value.total = { total: newValue });
-    }
+    const data = { ...value };
+    const result = Calculator(data, name);
+    setValue({ ...result });
   };
+  const { total, next } = value;
 
   return (
     <>
-      <Display result={value.total} />
+      <Display result={(next && next.toString()) || (total && total.toString())} />
       <ButtonPanel handleClick={handleClick} />
     </>
   );
