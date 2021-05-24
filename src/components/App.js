@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
-import Calculator from '../logic/calculate';
+import calculator from '../logic/calculate';
 
 function App() {
   const [value, setValue] = useState({
@@ -11,7 +11,7 @@ function App() {
   });
   const handleClick = (name) => {
     const data = { ...value };
-    const result = Calculator(data, name);
+    const result = calculator(data, name);
     setValue({ ...result });
   };
   const { total, next } = value;
