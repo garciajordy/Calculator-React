@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="home"
+  >
+    <h3>
+      Welcome to our page!
+    </h3>
+    <p>
+      This is the number one math magicians website in the world with loads of fun quotes and apps!
+    </p>
+    <p>
+      Don't forget to checkout the Quote page and the Calculator page
+    </p>
+  </div>
+</DocumentFragment>
+`;

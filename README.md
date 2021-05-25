@@ -36,6 +36,11 @@ Start the React server.
 $ npm start
 ```
 
+## Testing
+
+```
+$ npm test
+```
 ## Author
 
 👤 **Jordy Garcia**
