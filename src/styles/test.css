@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color:rgb(235, 235, 211);
+}
+.class1 {
+    width: 700px;
+    padding: 2rem;
+}
+
+.display {
+    height: 100px;
+    background-color: grey;
+    border: grey solid 1px;
+    border-collapse: collapse;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 3rem;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.button-row {
+    height: 100px;
+    display: flex;
+    
+}
+
+.button {
+    width: 25%;
+    border: gray solid 1px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.zero-btn {
+    width: 50%;
+    border: gray solid 1px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(255, 187, 0);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding: 1rem;
+    
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    color: rgb(248, 15, 15);
+}
+.quote {
+    padding: 5rem;
+}
+.home {
+    padding: 5rem;
+    font-size: 2rem;
+}

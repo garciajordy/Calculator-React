@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = ({ result }) => (
-  <h1>
-    { result }
+  <h1 className="display">
+    { result || '0' }
   </h1>
 );
 

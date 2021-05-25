@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculator from '../logic/calculate';
+import '../styles/test.css';
 
 function App() {
   const [value, setValue] = useState({
@@ -17,10 +18,10 @@ function App() {
   const { total, next } = value;
 
   return (
-    <>
+    <div className="class1">
       <Display result={(next && next.toString()) || (total && total.toString())} />
       <ButtonPanel handleClick={handleClick} />
-    </>
+    </div>
   );
 }
 
