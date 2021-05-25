@@ -12,7 +12,7 @@ describe('Calculate operations', () => {
     const result = operate('5', '1', '+');
     expect(result * 1).toBe(6);
   });
-  it('Should sustrate two numbers value', () => {
+  it('Should subtract two numbers value', () => {
     const result = operate('8', '10', '-');
     expect(result * 1).toEqual(-2);
   });
@@ -20,11 +20,11 @@ describe('Calculate operations', () => {
     const result = operate('10', '5', '/');
     expect(result * 1).toEqual(2);
   });
-  it('Should return a divided value', () => {
+  it('Should return an error', () => {
     const result = operate('7', '0', '/');
     expect(result).toEqual('ERROR can\'t divide by 0');
   });
-  it('Should return a multipliyed value', () => {
+  it('Should multiply 2 numbers', () => {
     const result = operate('2', '4', 'X');
     expect(result * 1).toEqual(8);
   });
